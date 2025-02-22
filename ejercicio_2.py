@@ -1,13 +1,5 @@
 import pandas as pd
 
-'''
-  Cargue el dataset y conviértelo en un DataFrame.
-. Calcule la temperatura promedio de cada ciudad.
-. Determine el registro con la temperatura más alta y el más bajo en el dataset.
-. Identifique qué ciudad tuvo la temperatura más alta y cuál la más baja en todo el dataset.
-. Encuentre cuántos registros tienen una temperatura mayor a 30°C.
-. Cuenta cuántos días en total hay registrados por cada ciudad.
-'''
 df=pd.read_csv('clima.csv')
 
 # Temperatura promedio de cada ciudad

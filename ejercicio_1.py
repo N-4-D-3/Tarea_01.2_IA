@@ -1,15 +1,5 @@
 import pandas as pd
 
-'''
-. Cargue los datos en un DataFrame.
-
-. Calcule la cantidad total de productos vendidos por categoría.
-
-. Determine cuál es el producto con el mayor total de ventas.
-
-. Encuentre el precio promedio de los productos vendidos.
-
-'''
 df=pd.read_csv('ventas.csv')
 
 # Cantidad total de productos vendidos por categoría

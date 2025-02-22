@@ -1,12 +1,4 @@
-'''
- Cargue el dataset y muestre las primeras filas.
-. Calcule el promedio de calificaciones por materia.
-. Identifique el estudiante con el promedio más alto.
-. Agrupa las calificaciones por estudiante y calcule el promedio de cada uno.
-. Identifique cuántos estudiantes tienen un promedio superior a 85.
-. Encuentre la materia con la mayor cantidad de calificaciones registradas.
-. Muestre los 5 estudiantes con el promedio más bajo.
-'''
+
 import pandas as pd
 
 df=pd.read_csv('calificaciones.csv')
