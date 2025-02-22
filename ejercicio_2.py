@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 df=pd.read_csv('clima.csv')
 
 # Temperatura promedio de cada ciudad
@@ -13,10 +14,10 @@ temperatura_maxima=df.loc[df['Temperatura'].idxmax()]
 temperatura_minima=df.loc[df['Temperatura'].idxmin()]
 
 print('----------------------------------')
-print('El registro con la temperatura más alta es: ')
+print('El registro con la temperatura más alta es: \n')
 print(temperatura_maxima.to_frame().T)
 print('----------------------------------')
-print('El registro con la temperatura más baja es: ')
+print('El registro con la temperatura más baja es: \n')
 print(temperatura_minima.to_frame().T)
 
 # Ciudad con la temperatura más alta y más baja

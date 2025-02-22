@@ -31,10 +31,12 @@ print('----------------------------------')
 print('La cantidad de estudiantes con promedio superior a 85 es: ',estudiantes_promedio_85)
 
 # Materia con la mayor cantidad de calificaciones registradas
-materia_calificaciones=df['Materia'].value_counts()
+materia_calificaciones = df['Materia'].value_counts().reset_index()
+materia_calificaciones.columns = ['Materia', 'Materias Registradas']
+
 print('----------------------------------')
-print('La materia con la mayor cantidad de calificaciones registradas es: ')
-print(materia_calificaciones.reset_index().rename(columns={ 'count': 'Calificaciones Registradas'}))
+print('La materia con la mayor cantidad de calificaciones registradas es:')
+print(materia_calificaciones)
 
 # 5 estudiantes con el promedio más bajo
 promedio_calificaciones_estudiante_bajo=promedio_calificaciones_estudiante.sort_values(ascending=True)
